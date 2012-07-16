@@ -12,7 +12,7 @@ module RedmineDepartments
 
         has_and_belongs_to_many :departments, :join_table => "issue_has_departments"
 
-        alias_method_chain :assignable_users, :filter
+        # alias_method_chain :assignable_users, :filter
       end
    
     end

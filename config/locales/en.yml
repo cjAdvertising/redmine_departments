@@ -17,4 +17,5 @@ en:
   link_cancel: Cancel
   multi_select_key_command: Command
   multi_select_key_control: Control
-  select_no_department: Standard Software (no department)
+  select_no_department: No department
+  field_abbreviation: Abbreviation
