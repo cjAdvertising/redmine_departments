@@ -5,4 +5,9 @@ module DepartmentsHelper
   def authorize_for_with_global(controller, action, global = false)
     User.current.allowed_to?({:controller => controller, :action => action}, @project, {:global => global})
   end
+
+  def query_list_item_value_content(value, name, item, query=nil)
+    return super unless value.is_a? Department
+    link_to h(value.name), department_path(value)
+  end
 end
